@@ -90,6 +90,10 @@ body {
 .list-style-none{
     list-style-type: none !important;
 }
+.scrollbar-transparent-width-none{
+    scrollbar-color: transparent transparent !important;
+    scrollbar-width: none !important;
+}
 // css starts
 .video-cover {
     background-color: #00000069;
@@ -204,6 +208,12 @@ body {
 }
 
 @media(max-width:992px) {
+    .max-h-285{
+    max-height: 285px !important;
+}
+.max-h-216{
+    max-height: 400px !important;
+}
     .drop_down_menu {
         background-color: var(--white) !important;
         position: relative !important;
@@ -220,7 +230,7 @@ body {
     .drop_down_menu ul{
         width: 100% !important;
     }
-    .drop_down_menu.javascriptScrolled {
+    .drop_down_menu.jq-dropdown {
         opacity: 1 !important;
         display: block !important;
     }
