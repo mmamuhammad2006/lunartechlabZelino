@@ -9,10 +9,10 @@ require('dotenv').config();
 helmetMiddleware(app);
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../../public')));
 app.use(expressLayouts);
 
-app.set('views', path.join(__dirname, '../views'));
+app.set('views', path.join(__dirname, '../../views'));
 app.set('layout', './layouts/app');
 app.set('view engine','ejs');
 
