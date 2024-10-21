@@ -33,6 +33,6 @@ app.use('/',whatsappRoute);
 const sendMail = require('../controller/sendMailController');
 app.use('/',sendMail);
 
-const port = process.env.PORT || 5000;
-app.listen(port);
+// const port = process.env.PORT || 5000;
+// app.listen(port);
 module.exports = app;
