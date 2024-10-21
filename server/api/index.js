@@ -3,9 +3,11 @@ const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
 const bodyParser = require('body-parser');    
 const helmetMiddleware = require('../security/helmet');
+const compression = require('compression');
 const app = express();
 require('dotenv').config();
 
+app.use(compression());
 helmetMiddleware(app);
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }))
