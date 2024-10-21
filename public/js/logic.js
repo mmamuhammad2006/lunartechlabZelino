@@ -15,7 +15,6 @@ $(document).ready(function () {
             $(".navbar-cont").addClass("bg-transparent");
         }
     $(window).resize(function () { 
-        console.log($(window).width());
         let width = $(window).width();
         if(width < 992){
             $(".navbar-cont").addClass("bg-blue position-fixed w-100 z-3 overflow-y-auto");
