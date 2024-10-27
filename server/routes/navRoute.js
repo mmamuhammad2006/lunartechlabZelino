@@ -15,9 +15,10 @@ router.get('/',async (req,res)=>{
         res.status(500).send('Catch function internal Server Error',error)
     }
 });
-router.get('/services',async (req,res)=>{
+router.get('/products/:product',async (req,res)=>{
     try{
-        res.render('pages/services',{title: 'Products',target: '#products-sec'});
+        const products = req.params.product;
+        res.render(`pages/products/${products}`,{title: 'Products',target: '#products-sec'});
     }catch(error){
         res.status(500).send('Catch function internal Server Error',error)
     }

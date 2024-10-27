@@ -4,9 +4,11 @@ const expressLayouts = require('express-ejs-layouts');
 const bodyParser = require('body-parser');    
 const helmetMiddleware = require('../security/helmet');
 const compression = require('compression');
+const cors = require('cors');
 const app = express();
 require('dotenv').config();
 
+app.use(cors());
 app.use(compression());
 helmetMiddleware(app);
 app.use(express.json());

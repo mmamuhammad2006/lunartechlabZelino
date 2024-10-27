@@ -49,7 +49,8 @@ router.post(
         const info = await transporter.sendMail(msg);
 
         console.log("Message sent: %s", info.messageId);
-        res.render("pages/contactUS", { title: "Conctact Us" });
+        // res.render("pages/contactUS", { title: "Conctact Us" });
+        res.json({success: "Email sent successfully"});
 
         // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
       } catch (error) {
