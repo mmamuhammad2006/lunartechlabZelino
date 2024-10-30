@@ -180,15 +180,15 @@
                 </div>
               </div> -->
             <!-- button -->
-            <div class="bttn text-center">
+            <!-- <div class="bttn text-center">
               <div class="col-12 d-flex justify-content-center">
                 <a
-                  href="<%= target %>"
+                  :href="target"
                   class="custom-button z-0 my-2 rounded-5 me-2 btn-parrot border-parrot"
                   >Discover More</a
                 >
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
