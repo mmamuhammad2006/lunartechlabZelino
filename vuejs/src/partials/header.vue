@@ -2,13 +2,14 @@
   <div class="container-fluid position-relative">
     <div class="col-12 p-0 m-auto">
       <nav
-        class="navbar max-h-285 scrollbar-transparent-width-none navbar-expand-lg bg-transparent position-relative z-2 py-3 navbar-cont px-sm-0 px-3"
+        :class="data.navbarClass"
+        class="navbar max-h-285 scrollbar-transparent-width-none navbar-expand-lg bg-transparent position-relative z-2 py-2 navbar-cont px-sm-0 px-3"
       >
         <div class="container m-auto">
-          <div class="col-md-4 mb-2 mb-md-0">
+          <div class="col-md-4 mb-0 mb-md-0">
             <router-link
               :to="{ name: 'home' }"
-              class="d-inline-flex link-body-emphasis text-decoration-none position-relative z-2"
+              class="d-flex link-body-emphasis text-decoration-none position-relative z-2"
             >
               <img
                 src="/images/logo2.png"
@@ -53,12 +54,14 @@
               </li>
               <li class="p-2">
                 <a
+                  @click="toggleDropdown"
                   id="a-tag"
                   class="text-decoration-none dropdown-toggle text-white cursor-pointer position-relative bottom-line-hover fw-bold"
                   role="button"
                   >PRODUCTS</a
                 >
                 <div
+                  :class="{ 'jq-dropdown': data.dropDown }"
                   class="drop_down_menu border text-start bg-white r-0 ms-auto"
                 >
                   <ul class="col-12 py-3 list-style-none">
@@ -192,3 +195,36 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { onMounted, ref } from "vue";
+
+const data = ref({
+  navbarClass: "bg-transparent",
+  dropDown: false,
+});
+
+const updateNavbar = async () => {
+  const width = window.innerWidth;
+  try {
+    if (width < 992) {
+      console.log("updateNavbar");
+      data.value.navbarClass =
+        "bg-blue position-fixed w-100 z-3 overflow-y-auto";
+    } else {
+      data.value.navbarClass = "bg-transparent";
+    }
+  } catch (err) {
+    console.err("updateNavbar function failed get this err:-", err);
+  }
+};
+
+const toggleDropdown = async () => {
+  data.value.dropDown = !data.value.dropDown;
+};
+
+onMounted(() => {
+  updateNavbar();
+  window.addEventListener("resize", updateNavbar);
+});
+</script>
