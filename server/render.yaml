@@ -1,0 +1,13 @@
+version: "1"
+services:
+  - type: web
+    name: express-backend  # Descriptive name for your service
+    buildCommand: npm install
+    startCommand: node api/index.js
+    envVars:
+    - key: PORT
+      value: '5000'
+
+    - key: GOOGLE_ANALYTICS_ID
+      value: G-8BWRJDV88X
+    runtime: node  # Specify the runtime type
