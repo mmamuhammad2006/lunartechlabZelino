@@ -87,7 +87,7 @@
                   <div class="col-12 d-flex justify-content-start">
                     <button
                       type="Submit"
-                      class="custom-button text-black z-0 my-2 rounded-5 me-2 btn-blue border-blue"
+                      class="custom-button bg-blue z-0 my-2 rounded-5 me-2 btn-blue border-blue"
                     >
                       Submit
                     </button>
