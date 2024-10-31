@@ -17,7 +17,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/vuejs/dist/$1"
+        "dest": "/vuejs/dist/index.html"
       }
     ]
   }
