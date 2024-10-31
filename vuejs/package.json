@@ -1,4 +1,4 @@
-{
+ {
   "name": "vuejs",
   "version": "0.0.0",
   "private": true,
@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "vite preview",
     "preview": "vite preview",
     "sass": "sass --no-source-map --watch src/styles/style.scss public/css/main.css"
   },

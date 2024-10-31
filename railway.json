@@ -1,15 +1,14 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "vuejs/package.json",
-        "use": "@vercel/static-build"
-      },
-      {
-        "src": "server/api/index.js",
-        "use": "@vercel/node"
-      }
-    ],
+  "services": {
+    "backend": {
+      "path": "./server/api",
+      "start": "node index.js"
+    },
+    "frontend": {
+      "path": "./vuejs",
+      "start": "npm run build"
+    }
+  },
     "routes": [
       {
         "src": "/api/(.*)",
