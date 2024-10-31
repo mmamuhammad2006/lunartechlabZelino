@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const { body, validationResult } = require("express-validator");
 
 router.post(
-  "/send-mail",
+  "/api/send-mail",
   [
     body("name").isString().notEmpty().withMessage("Name is required"),
     body("email").isEmail().withMessage("Valid email is required"),
@@ -37,25 +37,26 @@ router.post(
 
     // async..await is not allowed in global scope, must use a wrapper
     // async function main() {
-      const msg = {
-        from: `"Name: "${name} ",  Email: "${email}`, // sender address
-        to: "wwamalok@gmail.com", // list of receivers
-        subject: `${subject}`, // Subject line
-        text: `${message}`, // plain text body
-      };
+    const msg = {
+      from: `"Name: "${name} ",  Email: "${email}`, // sender address
+      to: "wwamalok@gmail.com", // list of receivers
+      subject: `${subject}`, // Subject line
+      text: `${message}`, // plain text body
+    };
 
-      try {
-        // send mail with defined transport object
-        const info = await transporter.sendMail(msg);
+    try {
+      // send mail with defined transport object
+      const info = await transporter.sendMail(msg);
 
-        console.log("Message sent: %s", info.messageId);
-        res.render("pages/contactUS", { title: "Conctact Us" });
+      console.log("Message sent: %s", info.messageId);
+      // res.render("pages/contactUS", { title: "Conctact Us" });
+      res.json({ success: "Email sent successfully" });
 
-        // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
-      } catch (error) {
-        console.error("Error sending email:", error);
-        res.status(500).send(error);
-      }
+      // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
+    } catch (error) {
+      console.error("Error sending email:", error);
+      res.status(500).send(error);
+    }
     // }
 
     // main().catch(console.error); // This shows emails on

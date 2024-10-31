@@ -1,0 +1,183 @@
+<template>
+  <!-- contact form -->
+  <div
+    class="container-fluid bg-body-tertiary py-5 px-sm-0 px-3"
+    id="contactUs-sec"
+  >
+    <div class="container m-auto bg-white shadow rounded-5 my-5">
+      <div class="col-12">
+        <div class="form-desc row">
+          <div class="form-cont col-lg-8 col-12 p-5">
+            <div class="col-12">
+              <div class="head py-3">
+                <div class="col-12 pb-3">
+                  <h3 class="fw-bold">Contact Us</h3>
+                </div>
+              </div>
+              <div class="err">
+                <div class="col-12">
+                  <h3
+                    v-if="data.err"
+                    class="fw-bold fs-5 text-danger pb-3 text-center"
+                  >
+                    {{ data.err }}
+                  </h3>
+                  <h3
+                    v-if="data.success"
+                    class="fw-bold fs-5 text-success pb-3 text-center"
+                  >
+                    {{ data.success }}
+                  </h3>
+                </div>
+              </div>
+              <form @submit.prevent="email" class="row">
+                <div class="mb-3 col-sm-6 col-12 pe-sm-2">
+                  <label for="Name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control px-3 py-2"
+                    v-model="data.form.name"
+                    name="name"
+                    placeholder="Name"
+                    aria-label="First name"
+                    id="Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3 col-sm-6 col-12 ps-sm-2">
+                  <label for="Email" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control px-3 py-2"
+                    v-model="data.form.email"
+                    id="Email"
+                    name="email"
+                    placeholder="Email"
+                    aria-describedby="emailHelp"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control px-3 py-2"
+                    v-model="data.form.subject"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter your subject"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control p-2"
+                    v-model="data.form.message"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    name="message"
+                    placeholder="Please type your message here"
+                    required
+                  ></textarea>
+                </div>
+                <div class="py-0">
+                  <div class="col-12 d-flex justify-content-start">
+                    <button
+                      type="Submit"
+                      class="custom-button bg-blue z-0 my-2 rounded-5 me-2 btn-blue border-blue"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="desc-cont col-lg-4 rounded-5 col-12 bg-blue text-white d-flex align-items-center p-4"
+          >
+            <div class="col-12">
+              <div class="head py-2">
+                <div class="col-12">
+                  <h3 class="text-parrot">24/7 support</h3>
+                </div>
+              </div>
+              <div class="desc">
+                <div class="col-12">
+                  <p>
+                    You can contact 24 hours and get connect with us . we are
+                    here to solve all your problems via songle email. Contact us
+                    through email and get connected us via whatsapp
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="py-2">
+                  <button
+                    @click="chat"
+                    class="btn text-center rounded-5 text-darkGray bg-parrot py-2 px-5 max-w-272 m-auto d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-brands fa-whatsapp fs-3"></i>
+                    <span class="ps-2">Request a quote</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<route lang="yaml">
+meta:
+  layout: App
+</route>
+
+<script setup>
+import { sendEmail } from "../services/api";
+import { ref } from "vue";
+const data = ref({
+  form: {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  },
+  err: "",
+  success: "",
+});
+const chat = async () => {
+  try {
+    // const response = await whatsappContact();
+    // console.log("WhatContact connection",response);
+    const number = "923456047058";
+    const whatsappUrl = `https://wa.me/${number}`;
+    window.open(whatsappUrl, "__blank");
+  } catch (err) {
+    console.error("Error opening WhatsApp:", err);
+  }
+};
+const email = async () => {
+  try {
+    if (
+      data.value.form.name === "" ||
+      data.value.form.email === "" ||
+      data.value.form.subject === "" ||
+      data.value.form.message === ""
+    ) {
+      data.value.err = "All fields are required"; // Set error message directly
+      data.value.success = "";
+      return;
+    }
+    const response = await sendEmail(data.value.form);
+    data.value.success = response["success"];
+    data.value.err = "";
+  } catch (err) {
+    console.error("Email don't send successfully", err);
+  }
+};
+</script>

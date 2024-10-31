@@ -8,33 +8,33 @@ const cache = cacheExpress({
     maxAge: 3600
 });
 router.use(cache);
-router.get('/',(req,res)=>{
+router.get('/',async (req,res)=>{
     try{
         res.render('pages/home',{title: 'Home',target: '#services-sec'});
     }catch(error){
-        res.send('Home page internal server error');
-        res.status(500).send('Internal Server Error',error)
+        res.status(500).send('Catch function internal Server Error',error)
     }
 });
-router.get('/services',(req,res)=>{
+router.get('/products/:product',async (req,res)=>{
     try{
-        res.render('pages/services',{title: 'Products',target: '#products-sec'});
+        const products = req.params.product;
+        res.render(`pages/products/${products}`,{title: 'Products',target: '#products-sec'});
     }catch(error){
-        res.status(500).send('Internal Server Error',error)
+        res.status(500).send('Catch function internal Server Error',error)
     }
 });
-router.get('/contact-us',(req,res)=>{
+router.get('/contact-us',async (req,res)=>{
     try{
         res.render('pages/contactUS',{title: 'Contact Us',target: '#contactUs-sec'});
     }catch (error){
-        res.status(500).send('Internal Server Error',error)
+        res.status(500).send('Catch function internal Server Error',error)
     }
 });
-router.get('/about-us',(req,res)=>{
+router.get('/about-us',async (req,res)=>{
     try{
         res.render('pages/aboutUs',{title: 'About Us',target: '#aboutUs-sec'});
     }catch (error){
-        res.status(500).send('Internal Server Error',error)
+        res.status(500).send('Catch function internal Server Error',error)
     }
 });
 module.exports = router;

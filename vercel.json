@@ -1,0 +1,32 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "vuejs/package.json",
+        "use": "@vercel/static-build"
+      },
+      {
+        "src": "server/api/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/server/api/index.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/vuejs/dist/index.html"
+      },
+      {
+        "src": "/favicon.ico",
+        "dest": "/vuejs/dist/favicon.ico"
+      },
+      {
+        "src": "/assets/(.*)",
+        "dest": "/vuejs/dist/assets/$1"
+      }
+    ]
+  }
+  
