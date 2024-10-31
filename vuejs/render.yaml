@@ -1,7 +1,0 @@
-version: "1"
-services:
-  - type: web
-    name: vuejs-frontend
-    buildCommand: npm install && npm run build
-    staticPublishPath: dist
-    runtime: static
