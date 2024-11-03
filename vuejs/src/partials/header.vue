@@ -131,22 +131,20 @@
       </nav>
 
       <!-- hero section -->
-      <div class="hero-section">
-        <video
-          autoplay
-          muted
-          loop
-          class="hero-sec-video position-absolute h-100 w-100 -z-1 t-b-l-r-0 object-fit-cover"
-        >
-          <source src="/videos/hero-sec-video.mp4" type="video/mp4" />
-        </video>
+      <div class="hero-section py-5">
+        <img
+          class="position-absolute h-100 w-100 -z-1 t-b-l-r-0"
+          src="/images/hero-img.jpg"
+          alt="web-development-img"
+          srcset=""
+        />
         <div
           class="video-cover position-absolute w-100 h-100 z-1 t-b-l-r-0"
         ></div>
         <!-- content -->
-        <div class="content py-5 position-relative z-1">
+        <div class="content my-lg-0 my-5 py-5 position-relative z-1">
           <!-- position-relative z-2 -->
-          <div class="col-12 py-5">
+          <div class="col-12 my-lg-0 my-5 py-5">
             <!-- heading -->
             <div class="head">
               <div class="col-12">
