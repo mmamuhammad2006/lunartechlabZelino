@@ -142,9 +142,9 @@
           class="video-cover position-absolute w-100 h-100 z-1 t-b-l-r-0"
         ></div>
         <!-- content -->
-        <div class="content my-lg-0 my-5 py-5 position-relative z-1">
+        <div class="content mt-lg-0 mt-5 py-5 position-relative z-1">
           <!-- position-relative z-2 -->
-          <div class="col-12 my-lg-0 my-5 py-5">
+          <div class="col-12 py-5">
             <!-- heading -->
             <div class="head">
               <div class="col-12">
