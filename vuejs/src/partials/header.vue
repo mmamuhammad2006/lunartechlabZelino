@@ -133,7 +133,7 @@
       <!-- hero section -->
       <div class="hero-section py-5">
         <img
-          class="position-absolute h-100 w-100 -z-1 t-b-l-r-0"
+          class="position-absolute h-100 w-100 -z-1 t-b-l-r-0 object-fit-cover"
           src="/images/hero-img.jpg"
           alt="web-development-img"
           srcset=""
