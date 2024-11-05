@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "https://lunar.app/api/$1"
+        "dest": "https://your-api-endpoint.com"
       },
       {
         "src": "/(.*)",
