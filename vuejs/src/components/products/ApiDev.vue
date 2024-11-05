@@ -22,7 +22,7 @@
               <router-link
                 :to="{
                   name: 'productDetail',
-                  params: { product: 'apiDev' },
+                  params: { product: 'apiDev', key: 'one' },
                 }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
@@ -68,7 +68,10 @@
               </router-link>
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'apiDev', key: 'two' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
@@ -112,7 +115,10 @@
               </router-link>
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'apiDev', key: 'three' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
@@ -157,7 +163,10 @@
               </router-link>
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'apiDev', key: 'four' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
@@ -202,7 +211,10 @@
               </router-link>
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'apiDev', key: 'five' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
@@ -246,7 +258,10 @@
               </router-link>
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'apiDev', key: 'six' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">

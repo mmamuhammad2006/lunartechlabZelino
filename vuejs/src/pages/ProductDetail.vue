@@ -6,9 +6,9 @@
         <div class="col-12 p-5 shadow bg-white rounded-5">
           <!-- top -->
           <div class="top bg-body-tertiary rounded-5">
-            <div class="col-12 d-flex p-5">
+            <div class="col-12 d-flex flex-lg-row flex-column p-5">
               <!-- left img -->
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <div class="col-12">
                   <img
                     class="h-350 w-100 rounded-5"
@@ -18,18 +18,20 @@
                 </div>
               </div>
               <!-- right content -->
-              <div class="content col-6 ps-5 d-flex align-items-center">
+              <div
+                class="content col-lg-6 col-12 ps-lg-5 ps-0 d-flex align-items-center pt-lg-0 pt-5"
+              >
                 <div class="col-12">
                   <div class="head pb-3">
                     <div class="col-12">
                       <h3 class="m-0 fw-bold fs-4 text-parrot">
-                        Ecommerce website for startup
+                        {{ data.title }}
                       </h3>
                     </div>
                   </div>
                   <div class="price pb-3">
                     <div class="col-12">
-                      <p class="m-0">3 Page(Basic) Website</p>
+                      <p class="m-0">{{ data.smDetail }}</p>
                     </div>
                   </div>
                   <div class="price pb-3">
@@ -40,10 +42,12 @@
                   <div class="buttons me-3 pb-3">
                     <div class="col-12 text-white">
                       <!-- buttons -->
-                      <a href="/contact-us" class="btn bg-parrot px-3 py-2 me-2"
-                        >Get Started</a
+                      <router-link
+                        :to="{ name: 'contactUs' }"
+                        class="btn bg-parrot px-3 my-2 py-2 me-2"
+                        >Get Started</router-link
                       >
-                      <a href="/whatsapp" class="btn bg-parrot px-3 py-2"
+                      <a href="/whatsapp" class="btn bg-parrot px-3 my-2 py-2"
                         >Schedule a Consultation</a
                       >
                     </div>
@@ -68,16 +72,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Push Notifications</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle1 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Engage users with timely updates by sending personalized
-                        messages about new features, promotions, or reminders.
-                        This helps to retain user interest and encourages
-                        regular interaction with the app.
+                        {{ data.serviceDetail1 }}
                       </p>
                     </div>
                   </div>
@@ -89,17 +90,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">In-App Purchases</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle2 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Enable users to buy products or services seamlessly
-                        within the app, enhancing the user experience. This
-                        feature can support one-time purchases, subscriptions,
-                        or consumable items, making monetization
-                        straightforward.
+                        {{ data.serviceDetail2 }}
                       </p>
                     </div>
                   </div>
@@ -111,17 +108,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Location Services</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle3 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Provide personalized experiences based on user location
-                        by using GPS and geolocation technologies. This can
-                        enable features such as local recommendations,
-                        location-based offers, and enhanced navigation
-                        capabilities.
+                        {{ data.serviceDetail3 }}
                       </p>
                     </div>
                   </div>
@@ -133,17 +126,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Analytics Integration</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle4 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Track user behavior and app performance to make
-                        data-driven decisions. Integrating tools like Google
-                        Analytics helps developers understand user interactions,
-                        identify drop-off points, and optimize the app for
-                        better engagement.
+                        {{ data.serviceDetail4 }}
                       </p>
                     </div>
                   </div>
@@ -159,9 +148,9 @@
         <div class="col-12 p-5 shadow bg-white rounded-5">
           <!-- top -->
           <div class="top bg-body-tertiary rounded-5">
-            <div class="col-12 d-flex p-5">
+            <div class="col-12 d-flex flex-lg-row flex-column p-5">
               <!-- left img -->
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <div class="col-12">
                   <img
                     class="h-350 w-100 rounded-5"
@@ -171,18 +160,20 @@
                 </div>
               </div>
               <!-- right content -->
-              <div class="content col-6 ps-5 d-flex align-items-center">
+              <div
+                class="content col-lg-6 col-12 ps-lg-5 ps-0 d-flex align-items-center pt-lg-0 pt-5"
+              >
                 <div class="col-12">
                   <div class="head pb-3">
                     <div class="col-12">
                       <h3 class="m-0 fw-bold fs-4 text-parrot">
-                        Ecommerce website for startup
+                        {{ data.title }}
                       </h3>
                     </div>
                   </div>
                   <div class="price pb-3">
                     <div class="col-12">
-                      <p class="m-0">3 Page(Basic) Website</p>
+                      <p class="m-0">{{ data.smDetail }}</p>
                     </div>
                   </div>
                   <div class="price pb-3">
@@ -193,10 +184,12 @@
                   <div class="buttons me-3 pb-3">
                     <div class="col-12 text-white">
                       <!-- buttons -->
-                      <a href="/contact-us" class="btn bg-parrot px-3 py-2 me-2"
-                        >Get Started</a
+                      <router-link
+                        :to="{ name: 'contactUs' }"
+                        class="btn bg-parrot px-3 my-2 py-2 me-2"
+                        >Get Started</router-link
                       >
-                      <a href="/whatsapp" class="btn bg-parrot px-3 py-2"
+                      <a href="/whatsapp" class="btn bg-parrot px-3 my-2 py-2"
                         >Schedule a Consultation</a
                       >
                     </div>
@@ -221,16 +214,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">User-Friendly Navigation</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle1 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Design intuitive menus and layouts that allow users to
-                        find information quickly and efficiently. This includes
-                        using breadcrumb navigation, clear labeling, and a
-                        responsive design that adapts to different devices.
+                        {{ data.serviceDetail1 }}
                       </p>
                     </div>
                   </div>
@@ -243,17 +233,14 @@
                   <div class="head pb-3">
                     <div class="col-12">
                       <h5 class="m-0 fs-5 fw-bold">
-                        Contact Forms and Chat Integration
+                        {{ data.serviceTitle2 }}
                       </h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Enable easy communication with customers through
-                        accessible contact forms and live chat features. This
-                        ensures that inquiries can be handled promptly,
-                        improving customer satisfaction and fostering trust.
+                        {{ data.serviceDetail2 }}
                       </p>
                     </div>
                   </div>
@@ -266,17 +253,14 @@
                   <div class="head pb-3">
                     <div class="col-12">
                       <h5 class="m-0 fs-5 fw-bold">
-                        Blog and Resource Section
+                        {{ data.serviceTitle3 }}
                       </h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Provide valuable content to engage users and improve SEO
-                        through regularly updated blog posts and resource
-                        materials. This can establish authority in the industry
-                        and drive organic traffic to the site.
+                        {{ data.serviceDetail3 }}
                       </p>
                     </div>
                   </div>
@@ -288,16 +272,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Analytics Dashboard</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle4 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Integrate tools like Google Analytics to track website
-                        performance, user demographics, and behavior. This data
-                        helps in making informed decisions for marketing
-                        strategies and website improvements.
+                        {{ data.serviceDetail4 }}
                       </p>
                     </div>
                   </div>
@@ -313,9 +294,9 @@
         <div class="col-12 p-5 shadow bg-white rounded-5">
           <!-- top -->
           <div class="top bg-body-tertiary rounded-5">
-            <div class="col-12 d-flex p-5">
+            <div class="col-12 d-flex flex-lg-row flex-column p-5">
               <!-- left img -->
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <div class="col-12">
                   <img
                     class="h-350 w-100 rounded-5"
@@ -325,18 +306,20 @@
                 </div>
               </div>
               <!-- right content -->
-              <div class="content col-6 ps-5 d-flex align-items-center">
+              <div
+                class="content col-lg-6 col-12 ps-lg-5 ps-0 d-flex align-items-center pt-lg-0 pt-5"
+              >
                 <div class="col-12">
                   <div class="head pb-3">
                     <div class="col-12">
                       <h3 class="m-0 fw-bold fs-4 text-parrot">
-                        Ecommerce website for startup
+                        {{ data.title }}
                       </h3>
                     </div>
                   </div>
                   <div class="price pb-3">
                     <div class="col-12">
-                      <p class="m-0">3 Page(Basic) Website</p>
+                      <p class="m-0">{{ data.smDetail }}</p>
                     </div>
                   </div>
                   <div class="price pb-3">
@@ -347,10 +330,12 @@
                   <div class="buttons me-3 pb-3">
                     <div class="col-12 text-white">
                       <!-- buttons -->
-                      <a href="/contact-us" class="btn bg-parrot px-3 py-2 me-2"
-                        >Get Started</a
+                      <router-link
+                        :to="{ name: 'contactUs' }"
+                        class="btn bg-parrot px-3 my-2 py-2 me-2"
+                        >Get Started</router-link
                       >
-                      <a href="/whatsapp" class="btn bg-parrot px-3 py-2"
+                      <a href="/whatsapp" class="btn bg-parrot px-3 my-2 py-2"
                         >Schedule a Consultation</a
                       >
                     </div>
@@ -376,17 +361,14 @@
                   <div class="head pb-3">
                     <div class="col-12">
                       <h5 class="m-0 fs-5 fw-bold">
-                        User Authentication and Authorization
+                        {{ data.serviceTitle1 }}
                       </h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Secure user access with robust login systems that can
-                        include multi-factor authentication. This protects
-                        sensitive data and ensures that only authorized users
-                        can access specific features or information.
+                        {{ data.serviceDetail1 }}
                       </p>
                     </div>
                   </div>
@@ -398,16 +380,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Real-Time Collaboration</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle2 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Enable users to work together in real time with features
-                        like shared document editing and instant messaging. This
-                        enhances teamwork and productivity, especially for
-                        remote or distributed teams.
+                        {{ data.serviceDetail2 }}
                       </p>
                     </div>
                   </div>
@@ -419,17 +398,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">API Integration</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle3 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Connect with external services and databases to extend
-                        functionality and streamline operations. This allows the
-                        web app to leverage third-party services for payment
-                        processing, social media integration, or data
-                        management.
+                        {{ data.serviceDetail3 }}
                       </p>
                     </div>
                   </div>
@@ -441,16 +416,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Offline Access</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle4 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Allow users to work without an internet connection by
-                        implementing caching mechanisms. Changes made offline
-                        can sync automatically when the connection is restored,
-                        ensuring uninterrupted workflow.
+                        {{ data.serviceDetail4 }}
                       </p>
                     </div>
                   </div>
@@ -466,9 +438,9 @@
         <div class="col-12 p-5 shadow bg-white rounded-5">
           <!-- top -->
           <div class="top bg-body-tertiary rounded-5">
-            <div class="col-12 d-flex p-5">
+            <div class="col-12 d-flex flex-lg-row flex-column p-5">
               <!-- left img -->
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <div class="col-12">
                   <img
                     class="h-350 w-100 rounded-5"
@@ -478,18 +450,20 @@
                 </div>
               </div>
               <!-- right content -->
-              <div class="content col-6 ps-5 d-flex align-items-center">
+              <div
+                class="content col-lg-6 col-12 ps-lg-5 ps-0 d-flex align-items-center pt-lg-0 pt-5"
+              >
                 <div class="col-12">
                   <div class="head pb-3">
                     <div class="col-12">
                       <h3 class="m-0 fw-bold fs-4 text-parrot">
-                        Ecommerce website for startup
+                        {{ data.title }}
                       </h3>
                     </div>
                   </div>
                   <div class="price pb-3">
                     <div class="col-12">
-                      <p class="m-0">3 Page(Basic) Website</p>
+                      <p class="m-0">{{ data.smDetail }}</p>
                     </div>
                   </div>
                   <div class="price pb-3">
@@ -500,10 +474,12 @@
                   <div class="buttons me-3 pb-3">
                     <div class="col-12 text-white">
                       <!-- buttons -->
-                      <a href="/contact-us" class="btn bg-parrot px-3 py-2 me-2"
-                        >Get Started</a
+                      <router-link
+                        :to="{ name: 'contactUs' }"
+                        class="btn bg-parrot px-3 my-2 py-2 me-2"
+                        >Get Started</router-link
                       >
-                      <a href="/whatsapp" class="btn bg-parrot px-3 py-2"
+                      <a href="/whatsapp" class="btn bg-parrot px-3 my-2 py-2"
                         >Schedule a Consultation</a
                       >
                     </div>
@@ -528,16 +504,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Versioning</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle1 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Manage multiple versions of the API to ensure backward
-                        compatibility. This allows existing applications to
-                        continue functioning without disruption while new
-                        features are introduced.
+                        {{ data.serviceDetail1 }}
                       </p>
                     </div>
                   </div>
@@ -549,16 +522,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Rate Limiting</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle2 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Protect the API from excessive usage by setting limits
-                        on the number of requests per user or IP address. This
-                        helps maintain performance and prevents abuse of
-                        resources.
+                        {{ data.serviceDetail2 }}
                       </p>
                     </div>
                   </div>
@@ -570,16 +540,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Error Handling</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle3 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Provide meaningful error messages and status codes to
-                        help developers understand issues quickly. A
-                        well-documented error handling process enhances the
-                        developer experience and aids in troubleshooting.
+                        {{ data.serviceDetail3 }}
                       </p>
                     </div>
                   </div>
@@ -591,16 +558,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Security Features</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle4 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Use authentication methods such as OAuth and encryption
-                        protocols to secure data. This ensures that sensitive
-                        information is protected during transmission and that
-                        only authorized users can access the API.
+                        {{ data.serviceDetail4 }}
                       </p>
                     </div>
                   </div>
@@ -616,9 +580,9 @@
         <div class="col-12 p-5 shadow bg-white rounded-5">
           <!-- top -->
           <div class="top bg-body-tertiary rounded-5">
-            <div class="col-12 d-flex p-5">
+            <div class="col-12 d-flex flex-lg-row flex-column p-5">
               <!-- left img -->
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <div class="col-12">
                   <img
                     class="h-350 w-100 rounded-5"
@@ -628,18 +592,20 @@
                 </div>
               </div>
               <!-- right content -->
-              <div class="content col-6 ps-5 d-flex align-items-center">
+              <div
+                class="content col-lg-6 col-12 ps-lg-5 ps-0 d-flex align-items-center pt-lg-0 pt-5"
+              >
                 <div class="col-12">
                   <div class="head pb-3">
                     <div class="col-12">
                       <h3 class="m-0 fw-bold fs-4 text-parrot">
-                        Ecommerce website for startup
+                        {{ data.title }}
                       </h3>
                     </div>
                   </div>
                   <div class="price pb-3">
                     <div class="col-12">
-                      <p class="m-0">3 Page(Basic) Website</p>
+                      <p class="m-0">{{ data.smDetail }}</p>
                     </div>
                   </div>
                   <div class="price pb-3">
@@ -650,10 +616,12 @@
                   <div class="buttons me-3 pb-3">
                     <div class="col-12 text-white">
                       <!-- buttons -->
-                      <a href="/contact-us" class="btn bg-parrot px-3 py-2 me-2"
-                        >Get Started</a
+                      <router-link
+                        :to="{ name: 'contactUs' }"
+                        class="btn bg-parrot px-3 my-2 py-2 me-2"
+                        >Get Started</router-link
                       >
-                      <a href="/whatsapp" class="btn bg-parrot px-3 py-2"
+                      <a href="/whatsapp" class="btn bg-parrot px-3 my-2 py-2"
                         >Schedule a Consultation</a
                       >
                     </div>
@@ -679,17 +647,14 @@
                   <div class="head pb-3">
                     <div class="col-12">
                       <h5 class="m-0 fs-5 fw-bold">
-                        Natural Language Processing (NLP)
+                        {{ data.serviceTitle1 }}
                       </h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Allow chatbots to understand and respond to user queries
-                        in a conversational manner. NLP capabilities enable the
-                        bot to interpret context, sentiment, and intent,
-                        providing a more human-like interaction.
+                        {{ data.serviceDetail1 }}
                       </p>
                     </div>
                   </div>
@@ -701,16 +666,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Multi-Platform Support</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle2 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Deploy chatbots on various platforms such as websites,
-                        social media, and messaging apps. This ensures that
-                        users can access support and services through their
-                        preferred channels, enhancing reach and engagement.
+                        {{ data.serviceDetail2 }}
                       </p>
                     </div>
                   </div>
@@ -722,16 +684,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">User Personalization:</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle3 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Customize interactions based on user preferences,
-                        history, and behavior. Personalized experiences can
-                        improve user satisfaction and increase the likelihood of
-                        repeat interactions with the chatbot.
+                        {{ data.serviceDetail3 }}
                       </p>
                     </div>
                   </div>
@@ -743,92 +702,13 @@
                   <!-- Head -->
                   <div class="head pb-3">
                     <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">24/7 Availability</h5>
+                      <h5 class="m-0 fs-5 fw-bold">{{ data.serviceTitle4 }}</h5>
                     </div>
                   </div>
                   <div class="text">
                     <div class="col-12">
                       <p class="m-0">
-                        Provide constant support without human intervention,
-                        allowing users to get assistance any time of day. This
-                        feature improves customer service efficiency and ensures
-                        that users receive immediate help whenever needed.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- box -->
-              <div class="box pb-4">
-                <div class="col-12">
-                  <!-- Head -->
-                  <div class="head pb-3">
-                    <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">
-                        Web Application Development
-                      </h5>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <div class="col-12">
-                      <p class="m-0">
-                        I specialize in developing complex web applications,
-                        including SaaS platforms, dashboards, and other
-                        interactive tools. My approach involves understanding
-                        the unique requirements of each client to create
-                        solutions that enhance operational efficiency and user
-                        engagement. I leverage modern frameworks and
-                        technologies to build robust applications that are
-                        scalable, secure, and user-friendly.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- box -->
-              <div class="box pb-4">
-                <div class="col-12">
-                  <!-- Head -->
-                  <div class="head pb-3">
-                    <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">SEO Optimization</h5>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <div class="col-12">
-                      <p class="m-0">
-                        I offer comprehensive search engine optimization
-                        services to ensure that your websites rank well on
-                        Google and other search engines. By implementing on-page
-                        and off-page SEO strategies, optimizing site structure,
-                        and creating quality content, I help improve your
-                        visibility and drive organic traffic. My goal is to
-                        enhance your website's search performance and ensure you
-                        reach your target audience effectively.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- box -->
-              <div class="box pb-4">
-                <div class="col-12">
-                  <!-- Head -->
-                  <div class="head pb-3">
-                    <div class="col-12">
-                      <h5 class="m-0 fs-5 fw-bold">Performance and Security</h5>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <div class="col-12">
-                      <p class="m-0">
-                        I emphasize the importance of fast, secure, and reliable
-                        websites. By implementing best practices in performance
-                        optimization and robust security measures, I ensure that
-                        your site runs smoothly and protects user data. This
-                        includes techniques such as caching, image optimization,
-                        secure authentication, and regular security audits to
-                        safeguard against threats and vulnerabilities.
+                        {{ data.serviceDetail4 }}
                       </p>
                     </div>
                   </div>
@@ -850,6 +730,11 @@ meta:
 <script setup>
 import { useRoute } from "vue-router";
 import { ref } from "vue";
+import { MobApp } from "../enums/productsEnum";
+import { WebDesign } from "../enums/productsEnum";
+import { WebApp } from "../enums/productsEnum";
+import { Api } from "../enums/productsEnum";
+import { Automation } from "../enums/productsEnum";
 const route = useRoute();
 
 const data = ref({
@@ -858,7 +743,80 @@ const data = ref({
   webAppDev: "/images/webAppDev.jpg",
   apiDev: "/images/api.jpg",
   chatBotDev: "/images/chatBot.jpg",
+  title: "",
+  smDetail: "",
+  serviceTitle1: "",
+  serviceDetail1: "",
+  serviceTitle2: "",
+  serviceDetail2: "",
+  serviceTitle3: "",
+  serviceDetail3: "",
+  serviceTitle4: "",
+  serviceDetail4: "",
 });
 const product = route.params.product;
+const key = route.params.key;
+if (product === "mobileAppDev") {
+  const mobAppKey = MobApp[key];
+  data.value.title = mobAppKey.title;
+  data.value.smDetail = mobAppKey.smDetail;
+  data.value.serviceTitle1 = mobAppKey.services.one.title;
+  data.value.serviceDetail1 = mobAppKey.services.one.smDetail;
+  data.value.serviceTitle2 = mobAppKey.services.two.title;
+  data.value.serviceDetail2 = mobAppKey.services.two.smDetail;
+  data.value.serviceTitle3 = mobAppKey.services.three.title;
+  data.value.serviceDetail3 = mobAppKey.services.three.smDetail;
+  data.value.serviceTitle4 = mobAppKey.services.four.title;
+  data.value.serviceDetail4 = mobAppKey.services.four.smDetail;
+} else if (product === "websiteDesignDev") {
+  const WebDesignKey = WebDesign[key];
+  data.value.title = WebDesignKey.title;
+  data.value.smDetail = WebDesignKey.smDetail;
+  data.value.serviceTitle1 = WebDesignKey.services.one.title;
+  data.value.serviceDetail1 = WebDesignKey.services.one.smDetail;
+  data.value.serviceTitle2 = WebDesignKey.services.two.title;
+  data.value.serviceDetail2 = WebDesignKey.services.two.smDetail;
+  data.value.serviceTitle3 = WebDesignKey.services.three.title;
+  data.value.serviceDetail3 = WebDesignKey.services.three.smDetail;
+  data.value.serviceTitle4 = WebDesignKey.services.four.title;
+  data.value.serviceDetail4 = WebDesignKey.services.four.smDetail;
+} else if (product === "webAppDev") {
+  const WebAppKey = WebApp[key];
+  data.value.title = WebAppKey.title;
+  data.value.smDetail = WebAppKey.smDetail;
+  data.value.serviceTitle1 = WebAppKey.services.one.title;
+  data.value.serviceDetail1 = WebAppKey.services.one.smDetail;
+  data.value.serviceTitle2 = WebAppKey.services.two.title;
+  data.value.serviceDetail2 = WebAppKey.services.two.smDetail;
+  data.value.serviceTitle3 = WebAppKey.services.three.title;
+  data.value.serviceDetail3 = WebAppKey.services.three.smDetail;
+  data.value.serviceTitle4 = WebAppKey.services.four.title;
+  data.value.serviceDetail4 = WebAppKey.services.four.smDetail;
+} else if (product === "apiDev") {
+  const ApiKey = Api[key];
+  data.value.title = ApiKey.title;
+  data.value.smDetail = ApiKey.smDetail;
+  data.value.serviceTitle1 = ApiKey.services.one.title;
+  data.value.serviceDetail1 = ApiKey.services.one.smDetail;
+  data.value.serviceTitle2 = ApiKey.services.two.title;
+  data.value.serviceDetail2 = ApiKey.services.two.smDetail;
+  data.value.serviceTitle3 = ApiKey.services.three.title;
+  data.value.serviceDetail3 = ApiKey.services.three.smDetail;
+  data.value.serviceTitle4 = ApiKey.services.four.title;
+  data.value.serviceDetail4 = ApiKey.services.four.smDetail;
+} else if (product === "automationTool") {
+  const AutomationKey = Automation[key];
+  data.value.title = AutomationKey.title;
+  data.value.smDetail = AutomationKey.smDetail;
+  data.value.serviceTitle1 = AutomationKey.services.one.title;
+  data.value.serviceDetail1 = AutomationKey.services.one.smDetail;
+  data.value.serviceTitle2 = AutomationKey.services.two.title;
+  data.value.serviceDetail2 = AutomationKey.services.two.smDetail;
+  data.value.serviceTitle3 = AutomationKey.services.three.title;
+  data.value.serviceDetail3 = AutomationKey.services.three.smDetail;
+  data.value.serviceTitle4 = AutomationKey.services.four.title;
+  data.value.serviceDetail4 = AutomationKey.services.four.smDetail;
+}
+
 console.log(product + " details");
 </script>

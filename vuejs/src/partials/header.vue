@@ -134,7 +134,7 @@
       <div class="hero-section py-5">
         <img
           class="position-absolute h-100 w-100 -z-1 t-b-l-r-0 object-fit-cover"
-          src="/images/hero-img.jpg"
+          :src="data.heroImg"
           alt="web-development-img"
           srcset=""
         />
@@ -200,6 +200,7 @@ import { onMounted, ref } from "vue";
 const data = ref({
   navbarClass: "bg-transparent",
   dropDown: false,
+  heroImg: "",
 });
 
 const updateNavbar = async () => {
@@ -216,13 +217,24 @@ const updateNavbar = async () => {
     console.err("updateNavbar function failed get this err:-", err);
   }
 };
-
+const updateImage = async () => {
+  const width = window.innerWidth;
+  try {
+    if (width <= 768) {
+      data.value.heroImg = "/images/hero-sm-img2.jpg";
+    } else {
+      data.value.heroImg = "/images/hero-img.jpg";
+    }
+  } catch (err) {}
+};
 const toggleDropdown = async () => {
   data.value.dropDown = !data.value.dropDown;
 };
+window.addEventListener("resize", updateImage);
 
 onMounted(() => {
   updateNavbar();
+  updateImage();
   window.addEventListener("resize", updateNavbar);
 });
 </script>

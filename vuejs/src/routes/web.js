@@ -26,7 +26,7 @@ const customRoutes = [
     meta: { layout: "App" },
   },
   {
-    path: "/product-detail/:product",
+    path: "/product-detail/:product/:key",
     name: "productDetail",
     component: loadPage("ProductDetail"),
     meta: { layout: "App" },
@@ -44,7 +44,6 @@ const routes = setupLayouts(customRoutes);
 
 const router = createRouter({
   history: createWebHistory(),
-  // routes,
   routes: routes,
 });
 

@@ -20,7 +20,10 @@
             <div class="col-12 d-flex flex-wrap">
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'websiteDesignDev', key: 'one' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
@@ -65,7 +68,10 @@
               </router-link>
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'websiteDesignDev', key: 'two' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
@@ -110,7 +116,10 @@
               </router-link>
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'websiteDesignDev', key: 'three' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
@@ -155,7 +164,10 @@
               </router-link>
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'websiteDesignDev', key: 'four' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
@@ -200,7 +212,10 @@
               </router-link>
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'websiteDesignDev', key: 'five' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
@@ -245,7 +260,10 @@
               </router-link>
               <!-- box -->
               <router-link
-                :to="{ name: 'productDetail' }"
+                :to="{
+                  name: 'productDetail',
+                  params: { product: 'websiteDesignDev', key: 'six' },
+                }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">

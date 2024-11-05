@@ -22,7 +22,7 @@
               <router-link
                 :to="{
                   name: 'productDetail',
-                  params: { product: 'automationTool' },
+                  params: { product: 'automationTool', key: 'one' },
                 }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >

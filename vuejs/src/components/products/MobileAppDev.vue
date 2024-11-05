@@ -22,7 +22,7 @@
               <router-link
                 :to="{
                   name: 'productDetail',
-                  params: { product: 'mobileAppDev' },
+                  params: { product: 'mobileAppDev', key: 'one' },
                 }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
@@ -70,7 +70,7 @@
               <router-link
                 :to="{
                   name: 'productDetail',
-                  params: { product: 'mobileAppDev' },
+                  params: { product: 'mobileAppDev', key: 'two' },
                 }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
@@ -118,7 +118,7 @@
               <router-link
                 :to="{
                   name: 'productDetail',
-                  params: { product: 'mobileAppDev' },
+                  params: { product: 'mobileAppDev', key: 'three' },
                 }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
@@ -166,7 +166,7 @@
               <router-link
                 :to="{
                   name: 'productDetail',
-                  params: { product: 'mobileAppDev' },
+                  params: { product: 'mobileAppDev', key: 'four' },
                 }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
@@ -214,7 +214,7 @@
               <router-link
                 :to="{
                   name: 'productDetail',
-                  params: { product: 'mobileAppDev' },
+                  params: { product: 'mobileAppDev', key: 'five' },
                 }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
@@ -262,7 +262,7 @@
               <router-link
                 :to="{
                   name: 'productDetail',
-                  params: { product: 'mobileAppDev' },
+                  params: { product: 'mobileAppDev', key: 'six' },
                 }"
                 class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
