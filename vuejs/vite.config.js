@@ -23,4 +23,13 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://your-railway-backend-url", // Replace with your actual Railway backend URL
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+  },
 });
