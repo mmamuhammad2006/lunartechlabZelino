@@ -1,6 +1,19 @@
 {
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "https://your-api-endpoint.com" },
-    { "source": "/(.*)", "destination": "/index.html" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/**/*",
+    "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://your-api-endpoint.com"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "dist/$1"
+    }
   ]
 }
