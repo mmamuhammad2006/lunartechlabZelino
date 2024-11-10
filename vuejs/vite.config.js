@@ -8,16 +8,6 @@ import Layouts from "vite-plugin-vue-layouts";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), Pages(), Layouts()],
-  // base: "/",
-  // server: {
-  //   proxy: {
-  //     "/api": {
-  //       target: "https://your-railway-backend-url", // Replace with your actual Railway backend URL
-  //       changeOrigin: true,
-  //       rewrite: (path) => path.replace(/^\/api/, ""),
-  //     },
-  //   },
-  // },
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
