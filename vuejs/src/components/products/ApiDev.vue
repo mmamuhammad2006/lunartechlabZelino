@@ -17,14 +17,14 @@
       <div class="content pt-5">
         <div class="col-12">
           <div class="boxes">
-            <div class="col-12 d-flex flex-wrap">
+            <div class="col-12 d-flex px-3 flex-wrap">
               <!-- box -->
               <router-link
                 :to="{
                   name: 'productDetail',
                   params: { product: 'apiDev', key: 'one' },
                 }"
-                class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
+                class="box col-lg-4 col-sm-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
                   <div class="img">
@@ -72,7 +72,7 @@
                   name: 'productDetail',
                   params: { product: 'apiDev', key: 'two' },
                 }"
-                class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
+                class="box col-lg-4 col-sm-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
                   <div class="img">
@@ -119,7 +119,7 @@
                   name: 'productDetail',
                   params: { product: 'apiDev', key: 'three' },
                 }"
-                class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
+                class="box col-lg-4 col-sm-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
                   <div class="img">
@@ -167,7 +167,7 @@
                   name: 'productDetail',
                   params: { product: 'apiDev', key: 'four' },
                 }"
-                class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
+                class="box col-lg-4 col-sm-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
                   <div class="img">
@@ -215,7 +215,7 @@
                   name: 'productDetail',
                   params: { product: 'apiDev', key: 'five' },
                 }"
-                class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
+                class="box col-lg-4 col-sm-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
                   <div class="img">
@@ -262,7 +262,7 @@
                   name: 'productDetail',
                   params: { product: 'apiDev', key: 'six' },
                 }"
-                class="box col-lg-4 col-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
+                class="box col-lg-4 col-sm-8 d-flex flex-lg-row flex-lg-column py-4 m-auto text-decoration-none"
               >
                 <div class="col-lg-11 col-12 shadow rounded-5">
                   <div class="img">

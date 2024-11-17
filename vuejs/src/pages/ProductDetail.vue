@@ -2,11 +2,11 @@
   <div class="container-fluid py-5">
     <div class="container m-auto py-5">
       <!-- Mobile App Dev -->
-      <div v-if="product === 'mobileAppDev'" class="content">
-        <div class="col-12 p-5 shadow bg-white rounded-5">
+      <div v-if="product === 'mobileAppDev'" class="content px-3">
+        <div class="col-12 p-sm-5 p-3 shadow bg-white rounded-5">
           <!-- top -->
-          <div class="top bg-body-tertiary rounded-5">
-            <div class="col-12 d-flex flex-lg-row flex-column p-5">
+          <div class="top bg-body-tertiary rounded-5 px-3">
+            <div class="col-12 d-flex flex-lg-row flex-column p-sm-5 pt-3">
               <!-- left img -->
               <div class="col-lg-6 col-12">
                 <div class="col-12">
@@ -57,7 +57,7 @@
             </div>
           </div>
           <!-- bottom -->
-          <div class="bottom mt-5 p-5 bg-body-tertiary rounded-5">
+          <div class="bottom mt-5 p-sm-5 px-3 pt-3 bg-body-tertiary rounded-5">
             <div class="col-12">
               <div class="head pb-3">
                 <div class="col-12">
@@ -144,11 +144,11 @@
       </div>
 
       <!-- Web Design Dev -->
-      <div v-if="product === 'websiteDesignDev'" class="content">
-        <div class="col-12 p-5 shadow bg-white rounded-5">
+      <div v-if="product === 'websiteDesignDev'" class="content px-3">
+        <div class="col-12 p-sm-5 p-3 shadow bg-white rounded-5">
           <!-- top -->
-          <div class="top bg-body-tertiary rounded-5">
-            <div class="col-12 d-flex flex-lg-row flex-column p-5">
+          <div class="top bg-body-tertiary rounded-5 px-3">
+            <div class="col-12 d-flex flex-lg-row flex-column p-sm-5 pt-3">
               <!-- left img -->
               <div class="col-lg-6 col-12">
                 <div class="col-12">
@@ -199,7 +199,7 @@
             </div>
           </div>
           <!-- bottom -->
-          <div class="bottom mt-5 p-5 bg-body-tertiary rounded-5">
+          <div class="bottom mt-5 p-sm-5 px-3 pt-3 bg-body-tertiary rounded-5">
             <div class="col-12">
               <div class="head pb-3">
                 <div class="col-12">
@@ -290,11 +290,11 @@
       </div>
 
       <!-- Web App Dev -->
-      <div v-if="product === 'webAppDev'" class="content">
-        <div class="col-12 p-5 shadow bg-white rounded-5">
+      <div v-if="product === 'webAppDev'" class="content px-3">
+        <div class="col-12 p-sm-5 p-3 shadow bg-white rounded-5">
           <!-- top -->
-          <div class="top bg-body-tertiary rounded-5">
-            <div class="col-12 d-flex flex-lg-row flex-column p-5">
+          <div class="top bg-body-tertiary rounded-5 px-3">
+            <div class="col-12 d-flex flex-lg-row flex-column p-sm-5 pt-3">
               <!-- left img -->
               <div class="col-lg-6 col-12">
                 <div class="col-12">
@@ -345,7 +345,7 @@
             </div>
           </div>
           <!-- bottom -->
-          <div class="bottom mt-5 p-5 bg-body-tertiary rounded-5">
+          <div class="bottom mt-5 p-sm-5 px-3 pt-3 bg-body-tertiary rounded-5">
             <div class="col-12">
               <div class="head pb-3">
                 <div class="col-12">
@@ -434,11 +434,11 @@
       </div>
 
       <!-- Api Dev -->
-      <div v-if="product === 'apiDev'" class="content">
-        <div class="col-12 p-5 shadow bg-white rounded-5">
+      <div v-if="product === 'apiDev'" class="content px-3">
+        <div class="col-12 p-sm-5 p-3 shadow bg-white rounded-5">
           <!-- top -->
-          <div class="top bg-body-tertiary rounded-5">
-            <div class="col-12 d-flex flex-lg-row flex-column p-5">
+          <div class="top bg-body-tertiary rounded-5 px-3">
+            <div class="col-12 d-flex flex-lg-row flex-column p-sm-5 pt-3">
               <!-- left img -->
               <div class="col-lg-6 col-12">
                 <div class="col-12">
@@ -489,7 +489,7 @@
             </div>
           </div>
           <!-- bottom -->
-          <div class="bottom mt-5 p-5 bg-body-tertiary rounded-5">
+          <div class="bottom mt-5 p-sm-5 px-3 pt-3 bg-body-tertiary rounded-5">
             <div class="col-12">
               <div class="head pb-3">
                 <div class="col-12">
@@ -576,11 +576,11 @@
       </div>
 
       <!-- Automation Tool Dev -->
-      <div v-if="product === 'automationTool'" class="content">
-        <div class="col-12 p-5 shadow bg-white rounded-5">
+      <div v-if="product === 'automationTool'" class="content px-3">
+        <div class="col-12 p-sm-5 p-3 shadow bg-white rounded-5">
           <!-- top -->
-          <div class="top bg-body-tertiary rounded-5">
-            <div class="col-12 d-flex flex-lg-row flex-column p-5">
+          <div class="top bg-body-tertiary rounded-5 px-3">
+            <div class="col-12 d-flex flex-lg-row flex-column p-sm-5 pt-3">
               <!-- left img -->
               <div class="col-lg-6 col-12">
                 <div class="col-12">
@@ -631,7 +631,7 @@
             </div>
           </div>
           <!-- bottom -->
-          <div class="bottom mt-5 p-5 bg-body-tertiary rounded-5">
+          <div class="bottom mt-5 p-sm-5 px-3 pt-3 bg-body-tertiary rounded-5">
             <div class="col-12">
               <div class="head pb-3">
                 <div class="col-12">
