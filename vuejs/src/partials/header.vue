@@ -208,8 +208,7 @@ const updateNavbar = async () => {
   try {
     if (width < 992) {
       console.log("updateNavbar");
-      data.value.navbarClass =
-        "bg-blue position-fixed w-100 z-3 overflow-y-auto";
+      data.value.navbarClass = "bg-blue w-100 z-3 overflow-y-auto";
     } else {
       data.value.navbarClass = "bg-transparent";
     }
