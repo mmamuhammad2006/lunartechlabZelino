@@ -87,7 +87,7 @@
                   <div class="col-12 d-flex justify-content-start">
                     <button
                       type="Submit"
-                      class="custom-button bg-blue z-0 my-2 rounded-5 me-2 btn-blue border-blue"
+                      class="custom-button text-blue bg-blue z-0 my-2 rounded-5 me-2 btn-blue border-blue"
                     >
                       Submit
                     </button>
@@ -154,7 +154,7 @@ const chat = async () => {
   try {
     // const response = await whatsappContact();
     // console.log("WhatContact connection",response);
-    const number = "923456047058";
+    const number = "27815764972 ";
     const whatsappUrl = `https://wa.me/${number}`;
     window.open(whatsappUrl, "__blank");
   } catch (err) {
