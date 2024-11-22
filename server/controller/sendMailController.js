@@ -14,7 +14,7 @@ router.post(
   async (req, res) => {
     const error = validationResult(req);
     if (!error.isEmpty()) {
-      return res.render("pages/contactUS", { title: "Conctact Us" });
+      return res.status(200).json({ errors: error.array() });
     }
     console.log("Email sent successfully");
     // const { name, email, message } = req.body;
