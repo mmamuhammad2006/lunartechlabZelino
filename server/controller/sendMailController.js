@@ -14,7 +14,7 @@ router.post(
   async (req, res) => {
     const error = validationResult(req);
     if (!error.isEmpty()) {
-      return res.status(200).json({ errors: error.array() });
+      return res.status(400).json({ errors: error.array() });
     }
     console.log("Email sent successfully");
     // const { name, email, message } = req.body;
@@ -45,6 +45,8 @@ router.post(
     };
 
     try {
+      console.log("Sending email with details:", msg); // Log the message details
+
       // send mail with defined transport object
       const info = await transporter.sendMail(msg);
 
@@ -57,9 +59,6 @@ router.post(
       console.error("Error sending email:", error);
       res.status(500).send(error);
     }
-    // }
-
-    // main().catch(console.error); // This shows emails on
   }
 );
 

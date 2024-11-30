@@ -4,7 +4,7 @@ import axios from "axios";
 export const sendEmail = async (formData) => {
   try {
     const response = await axios.post(
-      "http://lunarexpress.lunartechlab.com/api/send-mail",
+      "https://lunarexpress.lunartechlab.com/api/send-mail",
       formData
     );
     return response.data;

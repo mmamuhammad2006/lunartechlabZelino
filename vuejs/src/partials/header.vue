@@ -149,7 +149,7 @@
             <div class="head">
               <div class="col-12">
                 <h1 class="m-0 pb-3 text-white text-center">
-                  Welcome to Your Digital Marketing Solution November 22 commit
+                  Welcome to Your Digital Marketing Solution
                 </h1>
                 <h5 class="m-0 pb-3 text-white text-center">
                   ELEVATE YOUR BRAND…
