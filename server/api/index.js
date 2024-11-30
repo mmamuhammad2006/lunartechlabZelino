@@ -12,6 +12,7 @@ const corsOptions = {
   origin: "https://lunartechlab-zelino.vercel.app",
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
+  credentials: true,
 };
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));
