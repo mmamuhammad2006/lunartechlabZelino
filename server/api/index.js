@@ -8,7 +8,12 @@ const cors = require("cors");
 const app = express();
 require("dotenv").config();
 
-app.use(cors());
+const corsOptions = {
+  origin: "https://lunartechlab-zelino.vercel.app",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
+};
+app.use(cors(corsOptions));
 app.use(compression());
 helmetMiddleware(app);
 app.use(express.json());
@@ -18,31 +23,8 @@ app.use(express.static(path.join(__dirname, "../../vuejs/dist")));
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../../vuejs/dist/index.html")); // Adjust the path
 });
-// app.use(
-//   express.static(path.join(__dirname, "../../public"), {
-//     /// caching statci files
-//     maxAge: "1d",
-//     etag: true,
-//     lastModified: true,
-//     setHeaders: (res, path) => {
-//       if (
-//         path.endsWith(".js") ||
-//         path.endsWith(".css") ||
-//         path.endsWith(".jpg") ||
-//         path.endsWith(".jpeg") ||
-//         path.endsWith(".png") ||
-//         path.endsWith(".mp4")
-//       ) {
-//         res.set("Cache-Control", "public, max-age=86400");
-//       }
-//     },
-//   })
-// );
-app.use(expressLayouts);
 
-// app.set('views', path.join(__dirname, '../../views'));
-// app.set('layout', './layouts/app');
-// app.set('view engine','ejs');
+app.use(expressLayouts);
 
 // google analytics
 app.use((req, res, next) => {
