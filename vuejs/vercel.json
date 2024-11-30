@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "https://your-api-endpoint.com" },
+    { "source": "/api/(.*)", "destination": "https://lunarexpress.lunartechlab.com/api/$1" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
