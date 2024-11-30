@@ -14,6 +14,7 @@ const corsOptions = {
   allowedHeaders: ["Content-Type"],
 };
 app.use(cors(corsOptions));
+app.options("*", cors(corsOptions));
 app.use(compression());
 helmetMiddleware(app);
 app.use(express.json());
